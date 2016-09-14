@@ -1,0 +1,65 @@
+
+
+{% assign navlist = site.data.nav | uniq %}
+{% assign sections = navlist | group_by: "sectionorder" | sort: "name" %}
+{% assign accordiongroupid = 1 %}
+
+<ul>
+	<li>
+		<ul><li class="depth-1"><a href=" {{ '/' |  prepend: site.baseurl  }}">Home</a></li></ul>
+	</li>
+	{% for section in sections %}
+	{% assign sectiontitle = section.items[0].section %}
+	{% if sectiontitle != nill %}
+
+	<li>
+			<ul id="accordiongroup_{{ accordiongroupid }}" class="">
+				{% assign accordiongroupid = accordiongroupid  | plus:1 %}
+				{% if section.size == 1 %}
+						<li class="depth-1 ">
+							<a href="{{section.items[0].url}}">{{ sectiontitle }}</a>
+						</li>
+				{% else %}
+
+
+						<li class="depth-1 parent">
+							<a href="#accordiongroup_{{ accordiongroupid }}" data-toggle="collapse" data-parent="{{ accordiongroupid | minus:1 }}">{{ sectiontitle }}</a>
+							<ul id="accordiongroup_{{ accordiongroupid }}" class="">
+							{% assign accordiongroupid = accordiongroupid  | plus:1 %}
+										{% assign groups = section.items | group_by: "grouporder" | sort: "name" %}
+										{% for group in groups %}
+												{% if group.size == 1 %}
+														<li class="depth-2 ">
+															<a href="{{group.items[0].url}}">{{group.items[0].title}}</a>
+														</li>
+
+												{% else %}
+													{% assign grouptitle = group.items[0].group %}
+
+													<li class="depth-2 parent">
+															<a href="#accordiongroup_{{ accordiongroupid }}">{{ grouptitle }}</a>
+
+
+
+															<ul id="accordiongroup_{{ accordiongroupid }}" class="">
+															{% assign accordiongroupid = accordiongroupid  | plus:1 %}
+
+																{% for page in group.items %}
+																	<li class="depth-3 ">
+																		<a href="{{page.url}}">{{page.title}}</a>
+																	</li>
+																{% endfor %}
+															</ul>
+													</li>
+												{% endif%}
+
+
+										{% endfor %}
+							</ul>
+						</li>
+				 {%endif%}
+			</ul>
+	</li>
+	{%endif%}
+ {% endfor %}
+</ul>

@@ -1,0 +1,44 @@
+<!-- Get all relevant page objects -->
+
+  {% assign pages = site.pages  %}
+
+<!-- Create new array -->
+{% assign my_array = "title,url,order,group,grouporder" | split:"," %}
+
+<!-- Output Group Name or Page Title & URL -->
+{% assign cat = "work" %}
+{%  for p in site.pages %}
+  {% assign hash = p.url | split: '/' %}
+  {% assign catdir = parent[1] %}
+
+
+  {% assign hash = p.path | split: '/' %}
+  {% assign grouporder = hash[2] | split: '-' | first %}
+
+  {% if parent == cat %}
+    {%capture input%}
+      {{ p.title }},{{p.url}},{{p.order}},{{p.group}},{{grouporder}}
+    {% endcapture %}
+    {% assign my_array = my_array | push: input | split:"," %}
+
+  {% endif %}
+{% endfor%}
+
+
+<!-- Sort by Page -->
+
+{{my_array}}
+
+<!-- Output Page Title & URL -->
+{% assign groups = site.pages | group_by: "group" %}
+{% for group in groups %}
+
+  {% if group.name != "" %}
+    {{group.name}}
+    {% for item in group.items %}
+      {{item.title}}
+    {% endfor%}
+
+  {% endif%}
+
+{% endfor%}

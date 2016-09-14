@@ -1,0 +1,24 @@
+---
+layout: null
+---
+{% assign pages = site.pages  %}
+"title","url","order","group","grouporder","section","sectionorder"
+{% capture navblock %}
+    {%  for p in pages %}
+      {% capture nav %}
+        {% assign hash = p.url | split: '/' %}
+        {% assign section = hash[1] %}
+        {% assign hash = p.path | split: '/' %}
+        {% assign grouporder = hash[1] | split: '-' | first %}
+        {% assign filetype = hash | last | split: '.' | last  %}
+        {% if filetype == "md" %}
+          {% assign sectionorder = hash[0] | split: '-' | first %}
+          "{{ p.title }}","{{p.url}}","{{p.order}}","{{p.group}}","{{grouporder}}","{{ section | capitalize }}","{{sectionorder}}"
+        {% endif %}
+
+      {% endcapture %}
+{{ nav | lstrip | rstrip }}
+    {% endfor%}
+
+{% endcapture %}
+{{ navblock | lstrip | rstrip }}

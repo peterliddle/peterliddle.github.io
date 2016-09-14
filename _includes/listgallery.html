@@ -1,0 +1,40 @@
+{% assign imagelist = page.imagelist %}
+
+<div id="gallery" class="row-fluid">
+<ul class="gallery">
+{% for image in imagelist%}
+ {% assign imagemeta = site.data.imagemeta | where: "Stock book code" , image   %}
+ {% assign title = imagemeta[0]['Work Title'] %}
+ {% assign date = imagemeta[0].Date %}
+ {% assign materials = imagemeta[0].materials %}
+ {% assign ownership = imagemeta[0].Ownership %}
+ {% assign height = imagemeta[0].height %}
+ {% assign width = imagemeta[0].width %}
+
+  <li>
+    <div id="galItem{{ forloop.index }}" class="galleryItem row-fluid">
+      <div class="imageBox span8"><img src="{{ '/assets/artistswork/450/' | append: image | append: '.jpg' }}" alt="{{title}}"></div>
+      <div class="imageMetaBox span4">
+      <span class="workTitle">{{title}}</span>
+      <span class="workDate">{{date}}</span>
+      <span class="workMaterial">
+            {{ materials }}
+      </span>
+
+      <span class="workDimensions">
+        {% if width %}
+           {{ width }} x {{height }}
+        {% endif %}
+	      </span>
+
+      <span class="workPrice">
+           {{ ownership }}
+      </span>
+
+      </div>
+    </div>
+  </li>
+
+  {%  endfor %}
+</ul>
+</div>

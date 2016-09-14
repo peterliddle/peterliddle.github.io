@@ -1,0 +1,18 @@
+# Site settings
+title: Peter Liddle
+description: British Landscape Artist
+
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://peterliddle.com" # the base hostname & protocol for your site
+
+
+permalink: /:categories/:title.html #simplify url structure
+
+exclude: [Gemfile, Gemfile.lock, README.md] # Don't copy these into _site
+
+# Build settings
+markdown: kramdown
+
+sass:
+  style: compressed

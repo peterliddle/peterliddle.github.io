@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* set a max-width for horizontal fluid layout and make it centered */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 920px; /* or 950px */
+}
+
+
+/* Linked Fonts */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff') format('woff');
+}
+
+/* Text Universals */
+html {overflow-y: scroll;}
+body { font-family: 'Open Sans', sans-serif; font-size:16px;}
+h1, footerBox {font-family: 'Arial', sans-serif; font-size:32px;}
+h2 {font-size: 24px;}
+h4 {-webkit-margin-before: 0;
+-webkit-margin-after: 0;
+-webkit-margin-start: 18px;}
+a:hover {text-decoration:none;}
+
+.floatRight {float:right;}
+
+.titleImg {max-height:120px;}
+
+/* Text Universals/Gray */
+body, li.depth-1 li.depth-2 a{ color:#333;}
+
+
+/* Text Universals/CHERRY RED */
+h1, h2, h3, li.depth-1 a, a {-webkit-margin-before: 0em;
+-webkit-margin-after: 0em;
+color: #C00;
+}
+/* Text Universals/Dark RED */
+; {color:#831616;}
+
+/* Text Universals/Anchors */
+a {text-decoration:none;}
+
+
+
+
+
+/* Layout */
+
+/* Layout/Images + Image Info */
+
+.headerGutter {min-height:60px; border-bottom:  double thin; border-top: double; margin:10px 0 20px; padding:10px 0 5px;}
+#description {margin-bottom: 10px; border-bottom: thin groove;}
+/*div#description, div#gallery {padding-left:15px;}
+div#description, div#gallery {margin-left:-15px;}*/
+
+div#galItem1.galleryItem {margin-top:0px; padding-top:0px; border-top:none;}
+div.galleryItem {position:relative; margin-top:10px; border-top:groove 2px; padding-top:10px;}
+
+#mainContent {border-left: outset 1px; padding-left:20px;
+				border-right: inset 1px; padding-right:20px; min-height:600px }
+.imageBox img {box-shadow: 2px 2px 4px #888888;}
+
+
+
+
+
+/* Layout/Universal */
+
+
+
+
+
+
+
+/* Styling/Nav */
+#nav {border-bottom:double; padding-bottom:20px; margin-bottom:15px;}
+
+ul {list-style-type: none;
+-webkit-margin-before: 0px;
+-webkit-margin-after: 0px;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 18px;}
+
+li {list-style:none;
+}
+
+/*;li.depth-1 li.parent:before {
+		 content: "\2023"; margin-left:-10px;
+	     }*/
+li.depth-1 a { font-weight:bold; font-size:18px;}
+li.depth-1 li.parent { list-style-image:url(../images/bullet.gif);
+	     }
+li.depth-2 a {font-weight:normal; font-size:16px; display:block; margin:-2px; padding:1px 12px; }
+li.depth-2 a:hover {background-color:#f1f0f0; }
+li.depth-2 ul.in {padding:5px 0 5px 8px; border-bottom:thin groove; margin-bottom:12px;}
+li.depth-2 li.depth-3 div a { color:#666; margin:-1px; padding:1px 12px; display:block;}
+
+
+
+/* Styling/Description */
+#description h2 {margin-top:7px;}
+#description h2 em {font-size: smaller;}
+#description p {text-align:justify; margin:4px 0px 15px;}
+
+
+/* Styling/Image Gallery */
+ul.gallery {-webkit-padding-start: 0px;}
+
+
+/* Styling/Image Description */
+.imageMetaBox span {
+	display:block;
+	-webkit-margin-before: 0px;
+-webkit-margin-after: 0px;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;}
+
+.imageMetaBox span.workTitle {font-size:large; font-weight:bold;}
+.imageMetaBox span.workDate {}
+.imageMetaBox span.workMaterial, .imgInfo p.size {font-size:smaller; color:#333;}
+.imageMetaBox span.workPrice {font-size:smaller; color:#C00;}
+
+
+div#footerBox {border-top:double; margin-top:20px; padding-top:2px; color:#666; font-size:12px;}
+div#credit { text-align:right;}
+
+/*Contact Form*/
+label {display:block; padding-top:5px;}
+textarea {width:95%; min-height:150px;}
+
+@media (max-width: 767px) {
+  .imageMetaBox  {
+    margin: 5px 0 0;
+  }
+}
