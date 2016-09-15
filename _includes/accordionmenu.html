@@ -23,7 +23,7 @@
 
 
 						<li class="depth-1 parent">
-							<a href="#accordiongroup_{{ accordiongroupid }}" data-toggle="collapse" data-parent="{{ accordiongroupid | minus:1 }}">{{ sectiontitle }}</a>
+							<a href="#accordiongroup_{{ accordiongroupid }}" data-toggle="collapse" data-parent="#accordiongroup_{{ accordiongroupid | minus:1 }}">{{ sectiontitle }}</a>
 							<ul id="accordiongroup_{{ accordiongroupid }}" class="collapse">
 							{% assign accordiongroupid = accordiongroupid  | plus:1 %}
 										{% assign groups = section.items | group_by: "grouporder" | sort: "name" %}
@@ -37,7 +37,7 @@
 													{% assign grouptitle = group.items[0].group %}
 
 													<li class="depth-2 parent">
-															<a href="#accordiongroup_{{ accordiongroupid }}" data-toggle="collapse" data-parent="{{ accordiongroupid | minus:1 }}">{{ grouptitle }}</a>
+															<a href="#accordiongroup_{{ accordiongroupid }}" data-toggle="collapse" data-parent="#accordiongroup_{{ accordiongroupid | minus:1 }}">{{ grouptitle }}</a>
 
 
 
