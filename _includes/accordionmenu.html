@@ -22,7 +22,8 @@
 						</li>
 				{% else %}
 
-
+						{% assign bool = section.items | where: "url", {{ page.url }} %}
+						{{bool}}
 						<li class="depth-1 parent">
 							<a href="#accordiongroup_{{ accordiongroupid }}" data-toggle="collapse" data-parent="#accordiongroup_{{ parent1 }}">{{ sectiontitle }}</a>
 							<ul id="accordiongroup_{{ accordiongroupid }}" class="collapse">
@@ -46,9 +47,9 @@
 															<ul id="accordiongroup_{{ accordiongroupid }}" class="collapse">
 															{% assign accordiongroupid = accordiongroupid  | plus:1 %}
 
-																{% for page in group.items %}
+																{% for p in group.items %}
 																	<li class="depth-3 ">
-																		<div><a href="{{page.url}}">{{page.title}}</a></div>
+																		<div><a href="{{p.url}}">{{p.title}}</a></div>
 																	</li>
 																{% endfor %}
 															</ul>
