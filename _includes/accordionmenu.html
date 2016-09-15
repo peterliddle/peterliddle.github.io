@@ -22,11 +22,11 @@
 						</li>
 				{% else %}
 
-						{% assign bool = section.items | where: "url", {{ page.url }} %}
-						{{bool}}
+						{% assign active = section.items | where: "url", page.url | size %}
+
 						<li class="depth-1 parent">
 							<a href="#accordiongroup_{{ accordiongroupid }}" data-toggle="collapse" data-parent="#accordiongroup_{{ parent1 }}">{{ sectiontitle }}</a>
-							<ul id="accordiongroup_{{ accordiongroupid }}" class="collapse">
+							<ul id="accordiongroup_{{ accordiongroupid }}" class="collapse {% if active  == 1 %}{{ "in" }}{% endif %}">
 							{% assign parent2 = accordiongroupid %}
 							{% assign accordiongroupid = accordiongroupid  | plus:1 %}
 										{% assign groups = section.items | group_by: "grouporder" | sort: "name" %}
@@ -42,9 +42,9 @@
 													<li class="depth-2 parent">
 															<a href="#accordiongroup_{{ accordiongroupid }}" data-toggle="collapse" data-parent="#accordiongroup_{{ parent2 }}">{{ grouptitle }}</a>
 
+																{% assign active = group.items | where: "url", page.url | size %}
 
-
-															<ul id="accordiongroup_{{ accordiongroupid }}" class="collapse">
+															<ul id="accordiongroup_{{ accordiongroupid }}" class="collapse {% if active  == 1 %}{{ "in" }}{% endif %}">
 															{% assign accordiongroupid = accordiongroupid  | plus:1 %}
 
 																{% for p in group.items %}
