@@ -20,7 +20,7 @@
 /* Text Universals */
 html {overflow-y: scroll;}
 body { font-family: 'Open Sans', sans-serif; font-size:16px;}
-h1, footerBox {font-family: 'Arial', sans-serif; font-size:32px;}
+h1, #footerBox {font-family: 'Arial', sans-serif; font-size:32px;}
 h2 {font-size: 24px;}
 h4 {-webkit-margin-before: 0;
 -webkit-margin-after: 0;
@@ -128,7 +128,8 @@ ul.gallery {-webkit-padding-start: 0px;}
 .imageMetaBox span.workPrice {font-size:smaller; color:#C00;}
 
 
-div#footerBox {border-top:double; margin-top:20px; padding-top:2px; color:#666; font-size:12px;}
+div#footerBox {border-top:double; margin-top:20px;}
+div#footerBox p {margin-top:2px; color:#666; font-size:12px;}
 div#credit { text-align:right;}
 
 /*Contact Form*/
