@@ -18,7 +18,7 @@
 				{% assign accordiongroupid = accordiongroupid  | plus:1 %}
 				{% if section.size == 1 %}
 						<li class="depth-1 ">
-							<a href="{{section.items[0].url}}">{{ sectiontitle }}</a>
+							<div><a href="{{section.items[0].url}}">{{ sectiontitle }}</a></div>
 						</li>
 				{% else %}
 
@@ -32,7 +32,7 @@
 										{% for group in groups %}
 												{% if group.size == 1 %}
 														<li class="depth-2 ">
-															<a href="{{group.items[0].url}}">{{group.items[0].title}}</a>
+															<div><a href="{{group.items[0].url}}">{{group.items[0].title}}</a></div>
 														</li>
 
 												{% else %}
@@ -48,7 +48,7 @@
 
 																{% for page in group.items %}
 																	<li class="depth-3 ">
-																		<a href="{{page.url}}">{{page.title}}</a>
+																		<div><a href="{{page.url}}">{{page.title}}</a></div>
 																	</li>
 																{% endfor %}
 															</ul>

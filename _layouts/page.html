@@ -7,7 +7,7 @@ layout: default
         <div class="span9" id="mainContent">
             <div id="description">
               <h2>{{ page.title }}</h2>
-              {{ page.text }}
+              {{ page.text | markdownify }}
 
               <p>&nbsp;</p>
             </div>
