@@ -19,5 +19,5 @@ imagelist:
 permalink: /work/italy/genovese_shadows/
 
 group: Italy
-redirect_from: /work/italy
+redirect_from: /work/italy/
 ---

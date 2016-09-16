@@ -22,5 +22,5 @@ group: Sculpture
 
 redirect_from:
   - /work/sculpture_b/wood
-  - /work/sculpture_pii
+  - /work/sculpture_pii/
 ---
