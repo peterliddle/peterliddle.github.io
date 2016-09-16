@@ -13,4 +13,6 @@ imagelist:
 permalink: /work/figures/figures_83/
 
 group:   Figures
+
+redirect_from: /work/figures/three
 ---

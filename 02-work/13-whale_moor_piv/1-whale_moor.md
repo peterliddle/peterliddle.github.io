@@ -17,4 +17,5 @@ imagelist:
 permalink: /work/whale_moor_piv/
 
 group: Whale Moor & Lake District p.IV
+redirect_from: /work/whale_moor_d
 ---

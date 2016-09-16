@@ -17,4 +17,6 @@ imagelist:
 permalink: /work/galloway/galloway_85-86/
 
 group:  Galloway & Scottish Coast
+
+redirect_from: /work/galloway/galloway
 ---

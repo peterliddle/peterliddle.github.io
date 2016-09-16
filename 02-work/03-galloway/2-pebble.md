@@ -18,4 +18,6 @@ imagelist:
 permalink: /work/galloway/pebble_series/
 
 group:  Galloway & Scottish Coast
+
+redirect_from: /work/galloway/pebble
 ---

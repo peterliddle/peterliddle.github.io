@@ -14,4 +14,8 @@ imagelist:
 permalink: /work/figures/figures_82/
 
 group:   Figures
+
+redirect_from:
+  - /work/figures/
+  - /work/figures/two
 ---

@@ -13,4 +13,5 @@ imagelist:
 
 permalink: /work/sculpture_and_painting/
 group: Sculpture & Painting
+redirect_from: /work/sculpture_&amp;_painting
 ---

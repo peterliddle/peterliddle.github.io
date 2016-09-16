@@ -4,7 +4,7 @@ description: British Landscape Artist
 
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://peterliddle.com" # the base hostname & protocol for your site
+url: "http://peterliddle.github.io" # the base hostname & protocol for your site
 
 
 permalink: /:categories/:title.html #simplify url structure
@@ -16,3 +16,6 @@ markdown: kramdown
 
 sass:
   style: compressed
+
+gems:
+  - jekyll-redirect-from

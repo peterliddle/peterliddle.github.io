@@ -18,4 +18,9 @@ imagelist:
 permalink: /work/whale_moor_pii/lakeland_hills_and_streams/
 
 group:   Whale Moor & Lake District p.II
+
+redirect_from:
+  - /work/whale_moor_b/a_lakelandhills
+  - /work/whale_moor_pii/lakeland_hills_&amp;_streams
+  - /work/whale_moor_pii/
 ---

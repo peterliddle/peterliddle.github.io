@@ -14,4 +14,8 @@ imagelist:
 permalink: /work/galloway/hebrides_and_galloway/
 
 group:  Galloway & Scottish Coast
+
+redirect_from:
+  - /work/galloway/hebrides
+  - /work/galloway/hebrides_&amp;_galloway
 ---

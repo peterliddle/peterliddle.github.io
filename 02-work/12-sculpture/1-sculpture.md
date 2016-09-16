@@ -19,4 +19,8 @@ imagelist:
 permalink: /work/sculpture_pii/wood/
 
 group: Sculpture
+
+redirect_from:
+  - /work/sculpture_b/wood
+  - /work/sculpture_pii
 ---

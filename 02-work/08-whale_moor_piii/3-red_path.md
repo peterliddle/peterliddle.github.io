@@ -16,4 +16,6 @@ imagelist:
 permalink: /work/whale_moor_piii/red_path/
 
 group:  Whale Moor & Lake District p.III
+
+redirect_from: /work/whale_moor_c/f_redpath
 ---

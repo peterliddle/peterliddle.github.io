@@ -15,4 +15,5 @@ imagelist:
 permalink: /work/whale_moor/sculptural_form/
 
 group: Whale Moor & Lake District
+redirect_from: /work/whale_moor_a/b_snowline
 ---

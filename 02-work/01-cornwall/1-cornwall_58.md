@@ -15,4 +15,8 @@ imagelist:
 
 permalink: /work/cornwall/cornwall_58-65/
 group: Cornwall
+redirect_from:
+  - /work/cornwall/cornwall_early
+  - /work/cornwall
+  - /work/
 ---

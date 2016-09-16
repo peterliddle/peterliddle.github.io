@@ -6,6 +6,8 @@ title: Biography
 text: A full print biography of Peter Liddle is currently being compiled.  Below are a list of dates and a personal chronology, similar to his CV which is exclusively professional.
 
 permalink: /about/bio/
+
+redirect_from: /about/
 ---
 
 ### Timeline

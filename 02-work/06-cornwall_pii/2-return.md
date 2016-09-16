@@ -15,4 +15,6 @@ imagelist:
 permalink: /work/cornwall_pii/coastal_scenes/
 
 group: Cornwall p.II
+
+redirect_from: /work/cornwall_pii/return_coastal
 ---

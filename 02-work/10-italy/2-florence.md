@@ -16,4 +16,5 @@ imagelist:
 permalink: /work/italy/florence/
 
 group: Italy
+forward_from: /work/florence/
 ---

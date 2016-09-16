@@ -14,4 +14,8 @@ imagelist:
 permalink: work/whale_moor_piii/voices_in_the_mist/
 
 group:  Whale Moor & Lake District p.III
+
+redirect_from:
+  - /work/whale_moor_c/a_voices
+  - /work/whale_moor_piii/
 ---

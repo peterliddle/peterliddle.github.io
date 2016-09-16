@@ -15,4 +15,8 @@ imagelist:
 permalink: /work/cornwall_pii/cornish_gardens/
 
 group: Cornwall p.II
+
+redirect_from:
+  - /work/cornwall_pii/return
+  - /work/cornwall_pii
 ---

@@ -16,4 +16,5 @@ imagelist:
 
 permalink: /work/cornwall/cornwall_wave/
 group: Cornwall
+redirect_from: /work/cornwall/cornwal
 ---

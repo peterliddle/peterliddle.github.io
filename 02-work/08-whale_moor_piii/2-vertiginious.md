@@ -14,4 +14,6 @@ imagelist:
 permalink: /work/whale_moor_piii/vertiginous/
 
 group:  Whale Moor & Lake District p.III
+
+redirect_from: /work/whale_moor_c/c_vertiginous
 ---

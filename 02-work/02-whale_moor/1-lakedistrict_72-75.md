@@ -13,4 +13,7 @@ imagelist:
 
 permalink: /work/whale_moor/lakeland_hills/
 group: Whale Moor & Lake District
+redirect_from:
+  - /work/whale_moor_a/a_first
+  - /work/whale_moor/
 ---

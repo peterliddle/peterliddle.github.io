@@ -15,4 +15,6 @@ imagelist:
 permalink: /work/whale_moor_pii/mountain_paths/
 
 group:   Whale Moor & Lake District p.II
+
+redirect_from: /work/whale_moor_b/e_mountains
 ---
