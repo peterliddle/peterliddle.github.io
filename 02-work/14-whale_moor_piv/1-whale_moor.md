@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Whale Moor & Lake District p.IV
+title: A Greater Ease
 order: 1
 
 text: By 2000 Peter's landscapes have a feeling of weightlessness and far greater ease.  The feeling of flight is still present but is of a more gentle, gliding or levitating kind - they offer a more paradisiacal, ideal, vision.
@@ -14,8 +14,10 @@ imagelist:
   - WM_05-14
   - WM_07-03
 
-permalink: /work/whale_moor_piv/
+permalink: /work/whale_moor_piv/greater_ease/
 
 group: Whale Moor & Lake District p.IV
-redirect_from: /work/whale_moor_d/
+redirect_from:
+  - /work/whale_moor_d/
+  - /work/whale_moor_piv/
 ---

@@ -10,10 +10,9 @@ text: Text to follow
 imagelist:
   - WM_13-04
   - WM_13-05
-  - WM_14-01
   - WM_14-02
-  -
-permalink: /work/recent/solway
+  - WM_14-03
+permalink: /work/coasts/solway
 
-group: recent
+group: Coasts
 ---

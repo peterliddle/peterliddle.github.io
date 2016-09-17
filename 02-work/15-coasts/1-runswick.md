@@ -7,13 +7,12 @@ text: Text to follow
 
 
 imagelist:
-
-- WM_15-04
-- WM_15-05
 - WM_11-01
 - WM_11-02
+- WM_14-04
+- WM_14-05
 
-permalink: /work/recent/runswick
+permalink: /work/coasts/runswick
 
-group: recent
+group: Coasts
 ---

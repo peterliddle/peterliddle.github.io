@@ -16,7 +16,7 @@ imagelist:
 
 
 
-permalink: /work/recent/recent
+permalink: /work/gallic_shores
 
-group: Various Recent Works
+group: Gallic Shores
 ---
