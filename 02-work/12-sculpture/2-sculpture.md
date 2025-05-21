@@ -12,7 +12,7 @@ imagelist:
   - WM_08-05
 
 
-permalink: /work/sculpture_pii/wood/
+permalink: /work/sculpture_pii/stone/
 
 group: Sculpture
 
